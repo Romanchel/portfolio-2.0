@@ -55,6 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 75px;
 }
 .nav__list{
   display: flex;
@@ -66,4 +67,39 @@
 
 .nav__item:last-child{
   margin-right: 0px;
+}
+.nav__link{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  transition: color 0.7s linear;
+} 
+
+.nav__link:hover{
+  color: #43bd13;
+}
+.home__inner{
+  max-width: 640px;
+  width: 100%;
+  height: calc(100vh - 218px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home__title{
+  font-size: 48px;
+  line-height: 65px;
+}
+.home__subtitle{
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 123px;
+}
+.home__link{
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 25px;
+  display: block;
+  text-align: center;
 }
