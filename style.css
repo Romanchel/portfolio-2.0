@@ -41,7 +41,7 @@ body {
   position: relative;
 }
 
-.title::before{
+.title::before {
   content: "";
   position: absolute;
   top: 40px;
@@ -114,10 +114,7 @@ body {
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
-  color: #333333;
 }
-
-
 
 .home__subtitle {
   font-weight: 600;
@@ -188,9 +185,97 @@ body {
   color: #333333;
 }
 
-.about__item{
+.about__item {
   margin-bottom: 30px;
 }
-.about__item:last-child{
+.about__item:last-child {
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__text {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 39px;
+    margin-bottom: 40px;
+  }
+  .title::before {
+    top: 32px;
+  }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -----------------skills--------------------------------------------------------------------------------------------------------- */
+/* =-0-0=-09=0-9=-0=9-0-8=-0=980=8-0=9=0-0=-8-908-098-90011100110100101101011000001101010010010110101010101010 */
+
+.skills {
+  background-color: #f6f6f8;
+  padding: 140px 0;
+}
+.skills__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills__img {
+  max-width: 415px;
+  width: 100%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.skills__item{
+  display: flex;
+  Justify-content: space-between;
+  align-items: center;
+  margin-bottom: 85px;
+}
+.skills__item:last-child{
+  margin-bottom: 0px;
+}
+
+.skills__text{
+  margin-right: 15px;
+}
+
+.skills__rate {
+  display: block;
+  width: 600px;
+  height: 32px;
+  background: #dbdbed;
+}
+
+.skills__percent{
+  display: block;
+  background-color: #2352DE;
+  height: 32px;
+
+}
+
+@media screen and (max-width: 992px) {
+  .skills__img {
+    max-width: 335px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills__inner {
+    flex-direction: column;
+  }
+
+  .skills__img {
+    max-width: 600px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+
+  }
+  .skills__item {
+   margin-bottom: 35px;
+  }
 }
