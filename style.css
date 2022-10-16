@@ -279,3 +279,53 @@ body {
    margin-bottom: 35px;
   }
 }
+
+
+/* ------------------------------------------------------- */
+/* -----------------------------projects------------------------------------ */
+/* -------------------------------------------552555453454545454545 */
+
+.projects{
+  text-align: center;
+}
+
+
+.projects__list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}
+.projects__link{
+  position: relative;
+}
+
+.projects__link::before{
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-color: transparent;
+  transition: all 0.8s linear;
+}
+
+.projects__link::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -900%;
+  transform: translate(-50%, -50%);
+  background-image: url(./img/arrow-d.svg);
+}
+
+
+
+.projects__link:hover.projects__link::before{
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+.projects__link:hover.projects__link::after{
+  width: 37px;
+  height: 21px;
+  transition: height 1s linear;
+}
