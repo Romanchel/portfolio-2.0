@@ -230,32 +230,38 @@ body {
   object-fit: cover;
   margin-right: 15px;
 }
-.skills__item{
+.skills__list{
+  max-width: 600px;
+  width: 100%;
+}
+
+.skills__item {
   display: flex;
-  Justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 85px;
 }
-.skills__item:last-child{
+.skills__item:last-child {
   margin-bottom: 0px;
 }
 
-.skills__text{
+.skills__text {
+  width: 50px;
   margin-right: 15px;
 }
 
 .skills__rate {
   display: block;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   height: 32px;
   background: #dbdbed;
 }
 
-.skills__percent{
+.skills__percent {
   display: block;
-  background-color: #2352DE;
+  background-color: #2352de;
   height: 32px;
-
 }
 
 @media screen and (max-width: 992px) {
@@ -273,33 +279,34 @@ body {
     max-width: 600px;
     margin-right: 0px;
     margin-bottom: 30px;
-
   }
   .skills__item {
-   margin-bottom: 35px;
+    margin-bottom: 35px;
   }
 }
-
 
 /* ------------------------------------------------------- */
 /* -----------------------------projects------------------------------------ */
 /* -------------------------------------------552555453454545454545 */
 
-.projects{
+.projects {
   text-align: center;
 }
 
-
-.projects__list{
+.projects__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
 }
-.projects__link{
+.projects__link {
   position: relative;
 }
 
-.projects__link::before{
+.projects__item {
+  overflow: hidden;
+}
+
+.projects__link::before {
   content: "";
   position: absolute;
   width: 360px;
@@ -308,7 +315,7 @@ body {
   transition: all 0.8s linear;
 }
 
-.projects__link::after{
+.projects__link::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -317,15 +324,28 @@ body {
   background-image: url(./img/arrow-d.svg);
 }
 
-
-
-.projects__link:hover.projects__link::before{
+.projects__link:hover.projects__link::before {
   background-color: rgba(0, 0, 0, 0.5);
-  
 }
-
-.projects__link:hover.projects__link::after{
+.projects__link:hover.projects__link::after {
   width: 37px;
   height: 21px;
   transition: height 1s linear;
+}
+
+.projects__img {
+  max-width: 360px;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .projects__list {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
