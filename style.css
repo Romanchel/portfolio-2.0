@@ -137,7 +137,7 @@ body {
   height: 21px;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(./img/arrow-d.svg);
+  background-image: url(./img/home/arrow-d.svg);
   animation-name: arrow;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -285,9 +285,9 @@ body {
   }
 }
 
-/* ------------------------------------------------------- */
-/* -----------------------------projects------------------------------------ */
-/* -------------------------------------------552555453454545454545 */
+/* ------------------------------------------------------0101010101010010010100101002dqdoijsdsdodfnidbfusoudufisfiufhiudhuhufhisfudshofoshuhfihshsfhoshfoshfoushfoushfosf- */
+/* -----------------------------projects----------------------------------000000000000000101010101010010101001010110101010101010010110010110100101010101010100101001011010-- */
+/* -------------------------------------------55255545345454545454010100101010101001d0djdoijoidsindsfidsfbusdfudhfvdfvsjhfbjsdvfsvfuevfdvfjdbfjhdfjksvfukdvkfhvdkuhfbgg5 */
 
 .projects {
   text-align: center;
@@ -321,7 +321,7 @@ body {
   left: 50%;
   top: -900%;
   transform: translate(-50%, -50%);
-  background-image: url(./img/arrow-d.svg);
+  background-image: url(./img/home/arrow-d.svg);
 }
 
 .projects__link:hover.projects__link::before {
@@ -346,6 +346,148 @@ body {
 
 @media screen and (max-width: 768px) {
   .projects__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* -----------------------------------------------------------------------------------------_______________________ */
+/* -----------------------------------------contact------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+.contact{
+  padding: 135px 0;
+}
+
+.contact__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__social{
+  max-width: 530px;
+  width: 100%;
+}
+
+.contact__form-inner{
+  display: flex;
+}
+
+.contact__label:first-child{
+  margin-right: 30px;
+}
+
+.contact__input{
+  font-size: 14px;
+  line-height: 130%;
+  color: #9c9cab;
+  margin-top: 10px;
+  padding: 13px 15px;
+  max-width: 255px;
+  width: 100%;
+  background-color: #F6F6F8;
+  border: none;
+}
+.contact__input::placeholder{
+  font-size: 14px;
+  line-height: 130%;
+  color: #9c9cab;
+}
+
+.contact__textarea{
+  padding: 13px 15px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #9c9cab;   
+  outline: none;
+  margin-top: 10px;
+  width: 540px;
+  height: 115px;
+  background-color: #F6F6F8;
+  border: none;
+}
+.contact__textarea::placeholder{
+  font-size: 14px;
+  line-height: 130%;
+  color: #9c9cab; 
+}
+
+.contact__text{
+  font-size: 16px;
+  line-height: 160%;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.contact__phone{
+  display: block;
+  color: #2352de;
+  margin-bottom: 15px;
+}
+
+.contact__amail{
+  color: #2352de;
+  margin-bottom: 20px;
+}
+
+.contact__list{
+  display: flex;
+}
+
+.contact__item{
+  width: 44px;
+  height: 44px;
+  margin-right: 20px;
+}
+
+.contact__link{
+  margin-right: 20px;
+  position: relative;
+  font-size: 0;
+  width: 44px;
+  height: 44px;
+}
+
+.contact__link::before{
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact__link--instagram::before{
+  background-image: url(./img/contact/instagram.svg);
+}
+
+.contact__link--Facebook::before{
+  background-image: url(./img/contact/facebook.svg);
+}
+
+.contact__link--telegram::before{
+  background-image: url(./img/contact/telegram.svg);
+}
+
+.contact__label{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__button{
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  max-width: 150px;
+  background-color: #2352de;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 130%;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__form{
     grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -11,12 +11,12 @@
   <body>
     <section
       class="home"
-      style="background-image: url(./img/background__image.jpg)"
+      style="background-image: url(./img/home/background__img.png)"
     >
       <div class="container">
         <nav class="nav">
           <a class="logo" href="#">
-            <img src="./img/logo.svg" alt="logo" class="logo__img" />
+            <img src="./img/home/logo.svg" alt="logo" class="logo__img" />
           </a>
           <ul class="nav__list">
             <li class="nav__item">
@@ -110,7 +110,7 @@
               target="_blank"
               ><img
                 class="projects__img"
-                src="./img/maximus__img.png"
+                src="./img/projects/maximus__img.png"
                 alt="project"
             /></a>
           </li>
@@ -121,7 +121,7 @@
               target="_blank"
               ><img
                 class="projects__img"
-                src="./img/neapol__img.png"
+                src="./img/projects/neapol__img.png"
                 alt="project"
             /></a>
           </li>
@@ -172,30 +172,46 @@
             <a href="to:+3800000000" class="contact__phone"
               >+38 (050) 111 11 11</a
             >
-            <a href="mail to:frontend-monster@email.com " class="contact__amail"
-              >frontend-monster@email.com
+            <a
+              href="mail to:kozhevnikov.romann@gmail.com"
+              class="contact__amail"
+              >kozhevnikov.romann@gmail.com
             </a>
             <ul class="contact__list">
               <li class="contact__item">
-                <a href="#" class="contact__link">instagram</a>
+                <a href="#" class="contact__link contact__link--instagram"
+                  >instagram</a
+                >
               </li>
               <li class="contact__item">
-                <a href="#" class="contact__link">Facebook</a>
+                <a href="#" class="contact__link contact__link--Facebook"
+                  >Facebook</a
+                >
               </li>
               <li class="contact__item">
-                <a href="#" class="contact__link">telegram</a>
+                <a href="#" class="contact__link contact__link--telegram"
+                  >telegram</a
+                >
               </li>
             </ul>
           </div>
           <form action="" class="contact__form">
-            <label class="contact__label">Ведіть своє ім'я
-              <input type="text" class="input" placeholder="Роман"> 
-            </label>
-            <label class="contact__label">Номер телефона
-              <input type="text" class="input" placeholder="+380501111111">
-            </label>
-            <label class="contact__label">Ваше сповіщення
-              <textarea class="contact__textarea" placeholder="Текст вашего сповіщення"></textarea>
+            <div class="contact__form-inner">
+              <label class="contact__label"
+                >Ведіть своє ім'я
+                <input type="text" class="contact__input" placeholder="Роман" />
+              </label>
+              <label class="contact__label"
+                >Номер телефона
+                <input type="text" class="contact__input" placeholder="+380501111111" />
+              </label>
+            </div>
+            <label class="contact__label"
+              >Ваше сповіщення
+              <textarea
+                class="contact__textarea"
+                placeholder="Текст вашего сповіщення"
+              ></textarea>
             </label>
             <button class="contact__button">Відправити</button>
           </form>
