@@ -20,16 +20,16 @@
           </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Про мене</a>
+              <a href="#about" class="nav__link">Про мене</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Навички</a>
+              <a href="#skills" class="nav__link">Навички</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Портфоліо</a>
+              <a href="#projects" class="nav__link">Портфоліо</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Контакт</a>
+              <a href="#contact" class="nav__link">Контакт</a>
             </li>
           </ul>
         </nav>
@@ -40,7 +40,7 @@
         <a class="home__link" href="#">Дивись роботи</a>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__inner">
           <h2 class="title">Про мене</h2>
@@ -67,7 +67,7 @@
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="container">
         <h2 class="title">Навички</h2>
         <div class="skills__inner">
@@ -99,7 +99,7 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <h2 class="projects--title title">Мої проєкти</h2>
         <ul class="projects__list">
@@ -160,9 +160,9 @@
         </ul>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
-        <h2 class="title">Контакть</h2>
+        <h2 class="title">Контакти</h2>
         <div class="contact__inner">
           <div class="contact__social">
             <p class="contact__text">
@@ -172,10 +172,8 @@
             <a href="to:+3800000000" class="contact__phone"
               >+38 (050) 111 11 11</a
             >
-            <a
-              href="mail to:kozhevnikov.romann@gmail.com"
-              class="contact__amail"
-              >kozhevnikov.romann@gmail.com
+            <a href="mail to:frontend-monster@email.com " class="contact__mail"
+              >frontend-monster@email.com
             </a>
             <ul class="contact__list">
               <li class="contact__item">
@@ -195,15 +193,19 @@
               </li>
             </ul>
           </div>
-          <form action="" class="contact__form">
+          <form class="contact__form">
             <div class="contact__form-inner">
               <label class="contact__label"
                 >Ведіть своє ім'я
-                <input type="text" class="contact__input" placeholder="Роман" />
+                <input class="contact__input" type="text" placeholder="Роман" />
               </label>
               <label class="contact__label"
                 >Номер телефона
-                <input type="text" class="contact__input" placeholder="+380501111111" />
+                <input
+                  class="contact__input"
+                  type="text"
+                  placeholder="+380501111111"
+                />
               </label>
             </div>
             <label class="contact__label"
