@@ -72,6 +72,16 @@ body {
   background: rgba(35, 82, 222, 0.1);
 }
 
+.menu{
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .menu {
+    display: block;
+  }
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------home------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -99,6 +109,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 75px;
+  position: relative;
 }
 .nav__list {
   display: flex;
@@ -181,6 +192,17 @@ body {
 @media screen and (max-width: 992px) {
   .nav__list {
     display: none;
+    position: absolute;
+    right: 0px;
+    bottom: -80px;
+    flex-direction: column;
+  }
+  .active{
+    display: block;
+    background-color: rgb(87, 190, 221);
+  }
+  .nav__item{
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 540px) {
