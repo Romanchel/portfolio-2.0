@@ -195,13 +195,18 @@ body {
     position: absolute;
     right: 0px;
     bottom: -80px;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
     flex-direction: column;
   }
   .active{
     display: block;
-    background-color: rgb(87, 190, 221);
+    background-color: rgba(255, 138, 138, 0.495);
   }
   .nav__item{
+    display: flex;
+    justify-content: center;
     margin-right: 0;
   }
 }
